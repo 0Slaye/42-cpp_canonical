@@ -10,7 +10,7 @@ Hi! Welcome on Cpp_canonical. This program generate .hpp file at the Coplien can
 To install Cpp_canonical you need to clone the repository in your 'home' directory.
 
 ```bash
-cd && git clone https://github.com/0Slaye/cpp_canonical.git
+cd && git clone https://github.com/0Slaye/42-cpp_canonical.git
 ```
 Next you can add Cpp_canonical as an alias in your '.bashrc' or any 'rc' file (the file to execute is main.py).
 
