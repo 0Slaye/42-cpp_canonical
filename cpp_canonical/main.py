@@ -6,7 +6,7 @@
 #    By: slaye <slaye@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/21 11:11:08 by slaye             #+#    #+#              #
-#    Updated: 2024/05/21 12:43:40 by slaye            ###   ########.fr        #
+#    Updated: 2024/05/22 16:17:38 by slaye            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,20 +22,14 @@ def get_define_name(name:str):
 
 def execute(name:str):
 	fname = name + ".hpp"
-	header = config.get_config(name, get_define_name(fname))[0];
-	content = config.get_config(name, get_define_name(fname))[1];
-	footer = config.get_config(name, get_define_name(fname))[2];
+	content = config.get_config(name, get_define_name(fname));
 
 	try:
 		file = open(f"{fname}", "x")
 	except FileExistsError:
 		print(debug.ERR_FILE)
 	else:
-		for value in header:
-			file.write(f"{value}\n")
 		for value in content:
-			file.write(f"{value}\n")
-		for value in footer:
 			file.write(f"{value}\n")
 		file.close()
 		print(debug.SUCCESS)

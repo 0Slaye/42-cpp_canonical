@@ -6,18 +6,16 @@
 #    By: slaye <slaye@student.42.fr>                +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/05/21 12:13:54 by slaye             #+#    #+#              #
-#    Updated: 2024/05/21 12:48:20 by slaye            ###   ########.fr        #
+#    Updated: 2024/05/22 16:16:33 by slaye            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 def get_config(name:str, fname:str):
 	brackets = ('{', '}')
-	header = [
+	content = [
 		f"#ifndef {fname}",
 		f"# define {fname}",
-		f""
-	]
-	content = [
+		f"",
 		f"class {name} {brackets[0]}",
 		f"	public:",
 		f"		{name}(void); // canonical",
@@ -26,9 +24,7 @@ def get_config(name:str, fname:str):
 		f"",
 		f"		{name}	&operator=({name} const &ref); // canonical",
 		f"{brackets[1]};",
-		f""
-	]
-	footer = [
+		f"",
 		f"#endif"
 	]
-	return ((header, content, footer))
+	return (content)
