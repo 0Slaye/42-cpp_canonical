@@ -28,6 +28,6 @@ To correctly use Cpp_canonical you will need to give only one argument wich is t
 ## Configuration
 
 You can configure how your file will be create with the "config.py" file.
-This is simple python, you only need to change what's inside each arrays ("header", "content", "footer").
+This is simple python, you only need to change what's inside each string of the array.
 
 ![Screenshot](assets/screenshot.png)
