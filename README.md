@@ -7,7 +7,7 @@ Hi! Welcome on Cpp_canonical. This program generate .hpp file at the Coplien can
 
 ## Install
 
-To install Cpp_canonical you need to clone the repository in your 'home' directory.
+To install cpp_canonical you need to clone the repository in your 'home' directory.
 
 ```bash
 cd && git clone https://github.com/0Slaye/42-cpp_canonical.git
@@ -19,7 +19,7 @@ Next you can add Cpp_canonical as an alias in your '.bashrc' or any 'rc' file (t
 
 ## How to use
 
-To correctly use Cpp_canonical you will need to give only one argument wich is the class name.
+To correctly use cpp_canonical you will need to give only one argument wich is the class name.
 
 ```bash
 [Cpp_canonical_alias] [CLASS_NAME]
